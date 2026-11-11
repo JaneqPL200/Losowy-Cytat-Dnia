@@ -1,0 +1,12 @@
+{% extends "quotes/base.html" %}
+{% block title %}Błąd weryfikacji formularza{% endblock %}
+{% block content %}
+<div class="mx-auto text-center" style="max-width: 560px;">
+  <i class="bi bi-shield-exclamation display-3 text-danger"></i>
+  <h1 class="h3 mt-3">Nie udało się zweryfikować formularza</h1>
+  <p class="text-body-secondary">
+    Token bezpieczeństwa (CSRF) jest nieprawidłowy lub wygasł. Odśwież stronę i spróbuj ponownie.
+  </p>
+  <a href="{% url 'quotes:random' %}" class="btn btn-primary">Wróć do strony głównej</a>
+</div>
+{% endblock %}

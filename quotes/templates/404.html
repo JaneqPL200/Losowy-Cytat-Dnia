@@ -1,0 +1,9 @@
+{% extends "quotes/base.html" %}
+{% block title %}Nie znaleziono strony{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h1 class="display-3">404</h1>
+  <p class="lead">Nie znaleziono takiej strony.</p>
+  <a href="{% url 'quotes:random' %}" class="btn btn-primary">Wróć do cytatu dnia</a>
+</div>
+{% endblock %}

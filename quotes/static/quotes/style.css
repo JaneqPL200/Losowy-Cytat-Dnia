@@ -1,0 +1,6 @@
+body { background: var(--bs-tertiary-bg); }
+
+.quote-card { border: 0; border-top: 6px solid var(--bs-primary); }
+.quote-text { line-height: 1.5; }
+
+textarea.form-control { resize: vertical; }
